@@ -24,7 +24,7 @@ github_username:  lucas-matt
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
+theme: jekyll-theme-tactile
 gems:
   - jekyll-feed
 exclude:

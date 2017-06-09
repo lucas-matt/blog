@@ -2,3 +2,6 @@
 _site
 Gemfile.*
 .bundle
+node_modules
+*~
+db.json

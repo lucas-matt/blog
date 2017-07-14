@@ -1,71 +1,29 @@
 ---
-title: "Microservices: Pitfalls & How to Avoid Them"
-date: 2017-06-10
+title: "Microservices: Pitfalls, Problems & (Anti-)Patterns"
+date: 2017-07-14
 tags: microservices
 cover: /images/abstract-6.jpg
 ---
+![](mindthegap.jpg)
 
-![](pitfall.jpg)
 
-* Microservices are great
-* But require discipline and maturity
-* Blah blah blah
+# Introduction
 
-## 1. Too Many Microservices!
+The microservices architectural style seems to be continuing with its ever-rising popularity across many technology industries - and with good reason. There is a lot to be gained from adopting this model to ensure that your large application can be developed at a fast pace, scaled appropriately to provide a seamless experience for your users, and delivered to production with higher frequency and less overall risk. Before continuing, let's highlight some of these benefits.
 
-* strangler pattern
-* domain driven design
-* service for business domain
-* when to stop
+### Scaling Your Development Team
 
-## 2. Technology Sprawl
+Monolithic applications aren't actually a bad thing (despite the constant bad press), but once your product reaches a certain size you will likely hit several scalability challenges. The first of these will likely come as an organizational challenge rather than anything grounded in technology.
 
-* freedom (within limits)
-* technical sprawl
+Many of us have worked on those humongous Java applications which contain hundreds of thousands of lines of code, get deployed into an enterprise application server (such as JBoss or WebSphere) and are supported by some large RDBMS. To keep up with the competition several teams will need develop features on this monolith at once, and here's where the problems creep in. Merge car crashes, broken abstractions and untestability soon make the application a nightmare platform on which to develop.
 
-## 3. Lack of Standardization
+A great 
 
-* remove low level operational concern
-* common utilities
+### Scaling Your Application
 
-## 4. Immature Logging and Monitoring
 
-* logging
-* monitoring
-* debugging
-* distributed systems
 
-## 5. Not Preparing to Fail
+### Reducing Deployment Risk
 
-* reactive systems
 
-## 6. Uncontrolled Service Evolution
-
-* providing contracts
-* contract evolution
-* managing dependencies
-* SLA's
-
-## 7. Cultivating Beautiful Unicorns
-
-![](unicorn.jpg)
-
-* simplify and automate
-* infrastructure automation
-
-## 8. "Works for me!"
-
-* as close as possible to production
-
-## 9. Conflict
-
-* reverse conway's law
-* isolated teams siloing
-* team per service / team per business unit
-* avoid overwhelm
-
-## References
-
-* production ready microservices
-* have to be this tall to develop microservices
 

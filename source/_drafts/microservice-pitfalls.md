@@ -5,7 +5,7 @@ tags: microservices
 cover: /images/abstract-6.jpg
 ---
 ![Mind the Gap](mindthegap.jpg)
-
+<div style="text-align: right"><sub><sup>["Mind the gap"](https://www.flickr.com/photos/rk_photos/4914255517/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [raghavvidya](https://www.flickr.com/people/rk_photos/)</sup></sub></div>
 
 # Introduction (aka 'The Positive Bit')
 
@@ -19,9 +19,9 @@ Many of us have worked on one of those humongous Java applications which contain
 
 Microservices to the rescue! When we no longer have one gigantic project, but instead many small cleanly partitioned pieces, then work on various features is also partitioned. This gives us cleaner development in an isolated and much more mangeable development environment.
 
-![Monolithic boulder broken down]()
-
 A common, but excellent way, to picture this difference is to imagine a number of workers chipping away at a large boulder. In the monolithic case they struggle to gather around the surface well enough to get their work done without bashing away at the hands of the person next to them. When broken down into smaller pieces the surface area is greatly increased, and the workers can happily chip away in much greater comfort without bloody hands and broken thumbs.
+
+![Monolithic boulder broken down](rocks.png)
 
 ### Scaling Your Application
 
@@ -39,12 +39,24 @@ By splitting out the moving parts we can also separate out their deployment. Sma
 
 ### Now for the Spooky Part
 
-![Spooky Part]()
+![Spooky Part](ghost.jpg)
+<div style="text-align: right"><sub><sup>["green sheet spook"](https://www.flickr.com/photos/halloweenstock/8117718787/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [creepyhalloweenimages](https://www.flickr.com/people/halloweenstock/)</sup></sub></div>
 
-But I'm not here to gush about the wonders of a microservice architecture - and admittedly there are many potential benefits available to you. Rather I'm here to discuss the scary bits; the parts that can keep you up at night in a cold sweat and make your work-day feel like herding wildcats around a data centre - and of course some common approaches on how to avoid getting to that point in the first place.
+But I'm not here to gush about the wonders of a microservice architecture - and admittedly there are many potential benefits available to you - but rather I'm here to discuss the scary bits; the parts that can keep you up at night in a cold sweat and make your work-day feel like herding wildcats around a data centre.
 
+A microservice system is a distributed systems, and distributed systems are **hard** so let's consider some of the pitfalls to avoid, and some common strategies to achieve this in a number of different areas.
 
+# 1. Slicing & Dicing
+![Chop](chop.jpg)
+<div style="text-align: right"><sub><sup>["axe"](https://www.flickr.com/photos/nothing/5150721/) ([CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)) by [nothing](https://www.flickr.com/people/nothing/)</sup></sub></div>
 
+# 2. Communication Patterns
+![Communication](comms.jpg)
+<div style="text-align: right"><sub><sup>["Neuronal Network"](https://www.flickr.com/photos/aeruginosa/2171535014/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [aeruginosa](https://www.flickr.com/people/aeruginosa/)</sup></sub></div>
+
+# 3. Service Evolution
+![Evolution](evolution.jpg)
+<div style="text-align: right"><sub><sup>["Evolution"](https://www.flickr.com/photos/58376723@N07/5359060059/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [karmabomb1](https://www.flickr.com/people/58376723@N07/)</sup></sub></div>
 
 # References
 * [Production Ready Microservices](http://shop.oreilly.com/product/0636920053675.do)

@@ -1,5 +1,6 @@
 ---
-title: "Microservices: Pitfalls, Problems & (Anti-)Patterns"
+title: "Microservices: 'Mind the Gap'"
+subtitle: "Microservices ('Mind the Gap') Part 1"
 date: 2017-07-14
 tags: microservices
 cover: /images/abstract-6.jpg
@@ -9,7 +10,7 @@ cover: /images/abstract-6.jpg
 
 # Introduction (aka 'The Positive Bit')
 
-The microservices architectural style seems to be continuing with its ever-rising popularity, and with good reason. There is a lot to be gained from adopting this model to ensure that your large application can be developed at a fast pace, scaled appropriately, and delivered to production with higher frequency and less overall risk. Let's discuss some of the key benefits of a microservice architecture before we begin to tread carefully around some of its more scary attributes.
+The microservices architectural style seems to be continuing with its ever-rising popularity, and with good reason. There is a lot to be gained from adopting this model to ensure that your large application can be developed at a fast pace, scaled appropriately, and delivered to production with higher frequency and less overall risk. Let's discuss some of the key benefits of a microservice architecture.
 
 ### Scaling Your Development Team
 
@@ -37,30 +38,20 @@ In the case of a monolith any upgrade will, by it's nature, include all changes 
 
 By splitting out the moving parts we can also separate out their deployment. Smaller, more controlled, deployments result in less surprise, less uncertainty and makes quickly reverting back to a known state a more welcoming prospect than rolling back a huge upgrade.
 
-### Now for the Spooky Part
+### Upcoming: The Spooky Part
 
 ![Spooky Part](ghost.jpg)
 <div style="text-align: right"><sub><sup>["green sheet spook"](https://www.flickr.com/photos/halloweenstock/8117718787/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [creepyhalloweenimages](https://www.flickr.com/people/halloweenstock/)</sup></sub></div>
 
-But I'm not here to gush about the wonders of a microservice architecture - and admittedly there are many potential benefits available to you - but rather I'm here to discuss the scary bits; the parts that can keep you up at night in a cold sweat and make your work-day feel like herding wildcats around a data centre.
+But I'm not here to blindly praise the wonders of a microservice architecture - and admittedly there are many potential benefits available to you - but rather I'm here to start the discussion around the scary bits; the parts that can keep you up at night in a cold sweat and make your work-day feel like herding wildcats around a data centre.
 
-A microservice system is a distributed systems, and distributed systems are **hard** so let's consider some of the pitfalls to avoid, and some common strategies to achieve this in a number of different areas.
+A microservice system is a distributed systems, and distributed systems are **hard**! Let's consider, in turn, a number of different areas in which you must become proficient to avoid falling into traps within your microservice architecture. Specifically the pitfalls to avoid, and some common strategies to employ to achieve this.
 
-# 1. Slicing & Dicing
-![Chop](chop.jpg)
-<div style="text-align: right"><sub><sup>["axe"](https://www.flickr.com/photos/nothing/5150721/) ([CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)) by [nothing](https://www.flickr.com/people/nothing/)</sup></sub></div>
+# Next Time
 
-# 2. Communication Patterns
-![Communication](comms.jpg)
-<div style="text-align: right"><sub><sup>["Neuronal Network"](https://www.flickr.com/photos/aeruginosa/2171535014/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [aeruginosa](https://www.flickr.com/people/aeruginosa/)</sup></sub></div>
-
-# 3. Service Evolution
-![Evolution](evolution.jpg)
-<div style="text-align: right"><sub><sup>["Evolution"](https://www.flickr.com/photos/58376723@N07/5359060059/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [karmabomb1](https://www.flickr.com/people/58376723@N07/)</sup></sub></div>
+We'll look at arguably the most important step in a microservice architecture - strategies to effectively break up your application into a number of well designed microservices, whether decomposing that monolith or starting over with a clean slate.
 
 # References
 * [Production Ready Microservices](http://shop.oreilly.com/product/0636920053675.do)
-* [Reactive Microservices Architecture](http://www.oreilly.com/programming/free/reactive-microservices-architecture-orm.csp)
-* [Seven Deadly Sins of Microservices](https://www.infoq.com/presentations/7-sins-microservices)
-* [Martin Fowler: Microservice Prerequisites](https://martinfowler.com/bliki/MicroservicePrerequisites.html)
 * [Martin Fowler: Microservices](https://martinfowler.com/articles/microservices.html)
+* [Daniel Bryant on Microservices and Domain Driven Design](https://www.infoq.com/podcasts/daniel-bryant)

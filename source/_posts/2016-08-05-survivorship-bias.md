@@ -5,6 +5,8 @@ description: "The role of survivorship bias and
 web-scale/high-performance envy when software developers choose
 new tech."
 date: 2016-03-04
+thumbnail: /images/whaam.jpg
+category: Thoughts
 tags: [thinking, statistics, development]
 cover: /images/abstract-3.jpg
 ---

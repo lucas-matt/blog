@@ -4,7 +4,9 @@ title: Augeas the Missing Manual
 description: "A guide for some JSON processing using the Augeas configuration tool"
 date: 2015-06-01
 tags: [augeas]
+category: DevOps
 cover: /images/abstract-1.jpg
+thumbnail: /images/augeas.jpg
 
 ---
 

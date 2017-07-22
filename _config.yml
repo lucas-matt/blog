@@ -63,7 +63,7 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: clean-blog
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
@@ -71,3 +71,10 @@ deploy:
   type: git
   repo: git@github.com:lucas-matt/lucas-matt.github.io.git
   branch: master
+
+feed:
+  type: rss2
+  path: rss2.xml
+  limit: 0
+  hub:
+  content: false

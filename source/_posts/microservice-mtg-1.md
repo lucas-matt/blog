@@ -1,11 +1,15 @@
 ---
-title: "Microservices: 'Mind the Gap'"
-subtitle: "Microservices ('Mind the Gap') Part 1"
-date: 2017-07-17
+title: 'Microservices: ''Mind the Gap'''
 tags: microservices
+subtitle: Microservices ('Mind the Gap') Part 1
 cover: /images/abstract-6.jpg
+thumbnail: /images/microservice-mtg-1/mindthegap.jpg
+category: Architecture
+description: "Microservices 'Mind the Gap'. An introduction to a series about microservice pitfalls, problems and (anti-)patterns - and common strategies to avoid them."
+date: 2017-07-17 00:00:00
 ---
-![Mind the Gap](mindthegap.jpg)
+
+![](/images/microservice-mtg-1/mindthegap.jpg)
 <div style="text-align: right"><sub><sup>["Mind the gap"](https://www.flickr.com/photos/rk_photos/4914255517/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [raghavvidya](https://www.flickr.com/people/rk_photos/)</sup></sub></div>
 
 # Introduction (aka 'The Positive Bit')
@@ -24,7 +28,7 @@ Microservices to the rescue! When we no longer have one gigantic project, but in
 
 A common, but excellent way, to picture this difference is to imagine a number of workers chipping away at a large boulder. In the monolithic case they struggle to gather around the surface well enough to get their work done without bashing away at the hands of the person next to them. When broken down into smaller pieces the surface area is greatly increased, and the workers can happily chip away in much greater comfort without bloodied hands and broken thumbs.
 
-![Monolithic boulder broken down](rocks.png)
+![](/images/microservice-mtg-1/rocks.png)
 
 ### Scaling Your Application
 
@@ -42,7 +46,7 @@ By splitting out the moving parts we can also separate out their deployment. Sma
 
 ### Upcoming: The Spooky Part
 
-![Spooky Part](ghost.jpg)
+![](/images/microservice-mtg-1/ghost.jpg)
 <div style="text-align: right"><sub><sup>["green sheet spook"](https://www.flickr.com/photos/halloweenstock/8117718787/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [creepyhalloweenimages](https://www.flickr.com/people/halloweenstock/)</sup></sub></div>
 
 But I'm not here to blindly praise the wonders of a microservice architecture - and admittedly there are many potential benefits available to you - but rather I'm here to start the discussion around the scary bits, the parts that can keep you up at night in a cold sweat and make your work-day feel like herding wildcats around a data centre.

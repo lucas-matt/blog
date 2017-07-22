@@ -4,6 +4,8 @@ title: "Python Development with Vagrant & IntelliJ"
 description: "A quick guide to making Python development even easier by using Vagrant and IntelliJ"
 date: 2016-08-24
 tags: [python, intellij, vagrant]
+category: Development
+thumbnail: /images/pyintellij/header.jpg
 cover: /images/abstract-5.jpg
 ---
 

@@ -3,7 +3,9 @@ layout: post
 title: Zero Downtime Upgrade Problems and Patterns
 description: "A survey of the problems that various technologies face in this regard, and detail common patterns for tackling them."
 date: 2016-03-04
+category: DevOps
 tags: [upgrade, docker, linux, production]
+thumbnail: /images/downtime.jpg
 cover: /images/abstract-2.jpg
 ---
 ![](/images/downtime.jpg)

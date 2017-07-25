@@ -1,7 +1,6 @@
 ---
-title: 'Microservices: ''Mind the Gap'''
+title: "Microservices (Mind the Gap) Part 1: An Introduction"
 tags: microservices
-subtitle: Microservices ('Mind the Gap') Part 1
 cover: /images/abstract-6.jpg
 thumbnail: /images/microservice-mtg-1/mindthegap.jpg
 category: Architecture
@@ -11,6 +10,14 @@ date: 2017-07-17 00:00:00
 
 ![](/images/microservice-mtg-1/mindthegap.jpg)
 <div style="text-align: right"><sub><sup>["Mind the gap"](https://www.flickr.com/photos/rk_photos/4914255517/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [raghavvidya](https://www.flickr.com/people/rk_photos/)</sup></sub></div>
+
+---
+
+*This post is part of a larger series on the pitfalls, problems and (anti-)patterns commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
+* *{% post_link microservice-mtg-1 Part 1: Introduction %}*
+* *{% post_link microservice-mtg-2 Part 2: Decomposition to Microservices %}*
+
+---
 
 # Introduction (aka 'The Positive Bit')
 

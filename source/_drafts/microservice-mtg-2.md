@@ -1,5 +1,5 @@
 ---
-title: "Microservices (Mind the Gap) Part 2: Decomposition to Microservices"
+title: "Microservices (Mind the Gap) Part 2: Decomposing to Microservices"
 subtitle: "Microservices ('Mind the Gap') Part 2"
 date: 2017-07-23
 tags: microservices
@@ -15,15 +15,21 @@ cover: /images/abstract-7.jpg
 
 *This post is part of a larger series on the pitfalls, problems and (anti-)patterns commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
 * *{% post_link microservice-mtg-1 Part 1: Introduction %}*
-* *{% post_link microservice-mtg-2 Part 2: Decomposition to Microservices %}*
+* *{% post_link microservice-mtg-2 Part 2: Decomposing to Microservices %}*
 
 ---
 
 One of the most important problems you'll encounter whilst developing and evolving a microservice architecture is that of dividing up an existing monolith or domain into a number of well defined and decoupled entities.
 
-So how can we divide and conquer in a sensible and well defined manner. First let's look at one of the approaches taken by Domain Driven Design - specifically that of *Bounded Contexts*.
+So how can we divide and conquer in a sensible manner. First let's look at one of the approaches taken by Domain Driven Design - specifically that of *Bounded Contexts*.
 
 # Bounded Context
+
+When developing any application you spend much of your time modelling the real world it is meant to serve. The terminology that emerges out of this process generally becomes accepted across the development team as a whole. These same concepts get encoded as objects with various states and behaviours inside your application. This forms the unified domain model for your business.
+
+However, once our application reaches a certain size it becomes increasingly different to stretch these models to cover all aspects of the business domain. For example, an account will likely mean something different to a department meant for billing vs one 
+
+
 
 *DDD - bounded context == microservice*
 *service is a business domain*

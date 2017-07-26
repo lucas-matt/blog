@@ -25,6 +25,10 @@ So how can we divide and conquer in a sensible and well defined manner. First le
 
 # Bounded Context
 
+*DDD - bounded context == microservice*
+*service is a business domain*
+*divide up complex domain into bounded contexts and map out relationships between*
+
 # Things that Change Together Stay Together
 
 As already discussed, microservices should be well-defined, nicely isolated and live within their own bounded context. The ability to separate concerns into neat little packages, that can be managed and worked on separately, is what enables all that dividing to actually conquer your monster scalability problem.
@@ -39,7 +43,21 @@ Let’s quickly review two fairly simple but fundamental concepts of good softwa
 **Coupling** is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules.
 {% endblockquote %}
 
+*if changing components together then should be merged*
+*drive modularity through things that change at the same time*
+
+# Decoupled in Space and Time
+
+*decoupled in space and time*
+*Isolation Drives Simpler Deployment*
+
+# Strangler Pattern
+
+*strangler pattern*
+
 # Next Time
+
+
 
 # References
 * [Microservices Architecture Principle #3: small bounded contexts over one comprehensive model](http://blog.xebia.com/microservices-architecture-principle-3-small-bounded-contexts-over-one-comprehensive-model/)

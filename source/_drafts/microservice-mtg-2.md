@@ -27,13 +27,15 @@ So how can we divide and conquer in a sensible manner. First let's look at one o
 
 When developing any application you spend much of your time modeling the real world that it is designed to serve. The terminology that emerges out of this process generally becomes accepted across the development team as a whole, forming the unified domain model for your business. These same concepts get encoded as objects with various states and behaviors inside your application.
 
-However, once the application reaches a certain size it becomes increasingly difficult to stretch these models to cover all aspects of the business domain. For example, an 'account' will likely mean something very different to the billing department than one geared towards managing security. This can lead to a confusion of responsibilities within the model, and whilst teams will generally be using the same terminology in reality they actually mean very different things.
+However, once the application reaches a certain size it becomes increasingly difficult to stretch these models to cover all aspects of the business domain. For example, an 'account' will likely mean something very different to the billing department than one geared towards managing security. This can lead to a confusion of responsibilities within the model, and whilst teams will generally develop using the same terminology in reality they actually mean very different things.
 
-A solution proposed by the [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215) methodology is to divide up our unified model. This approach avoids the problems described by chopping these conflicting concerns into a number of partitions - each a bounded context. This allows for coherent discussion and clear modeling to take place within the bounds of a context, adhering more closely to the single responsibility principle. It also allows us to map out the relationships between each bounded context so that interactions between them are more clearly defined.
+A solution proposed by the [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215) methodology is to divide up our unified model. This approach improves upon the above by chopping these conflicting concerns into a number of partitions - each a bounded context. This allows for coherent discussion and clear modeling to take place within the bounds of a context, adhering more closely to the single responsibility principle. It also allows us to map out the relationships between each bounded context so that the interactions between them are more clearly defined.
 
 To continue our 'account' example, we would split both 'billing' and 'security' into different bounded contexts. We are then able to reason about the concerns of the model separately for each - the billing team concerning themselves more with payments, whilst security with any rights or permissions given to an account.
 
 ![some context split example]()
+
+It follows from this that the way we breakup our application into services corresponds very naturally to the bounded contexts we define. This reduces the amount of knowledge that any one team has to keep in mind as the focus only has to be within a specific context. 
 
 *service is a business domain. bounded context == microservice*
 

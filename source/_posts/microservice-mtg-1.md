@@ -13,9 +13,9 @@ date: 2017-07-17 00:00:00
 
 ---
 
-*This post is part of a larger series on the pitfalls, problems and (anti-)patterns commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
+*This post is part of a larger series on the challenges commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
 * *{% post_link microservice-mtg-1 Part 1: Introduction %}*
-* *{% post_link microservice-mtg-2 Part 2: Decomposition to Microservices %}*
+* *{% post_link microservice-mtg-2 Part 2: Decomposing to Microservices %}*
 
 ---
 

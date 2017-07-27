@@ -13,7 +13,7 @@ cover: /images/abstract-7.jpg
 
 ---
 
-*This post is part of a larger series on the pitfalls, problems and (anti-)patterns commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
+*This post is part of a larger series on the challenges commonly encountered whilst adapting and running a microservice style architecture. For further entries in this series please check out the following links*:
 * *{% post_link microservice-mtg-1 Part 1: Introduction %}*
 * *{% post_link microservice-mtg-2 Part 2: Decomposing to Microservices %}*
 
@@ -25,15 +25,18 @@ So how can we divide and conquer in a sensible manner. First let's look at one o
 
 # Bounded Context
 
-When developing any application you spend much of your time modelling the real world it is meant to serve. The terminology that emerges out of this process generally becomes accepted across the development team as a whole. These same concepts get encoded as objects with various states and behaviours inside your application. This forms the unified domain model for your business.
+When developing any application you spend much of your time modeling the real world that it is designed to serve. The terminology that emerges out of this process generally becomes accepted across the development team as a whole, forming the unified domain model for your business. These same concepts get encoded as objects with various states and behaviors inside your application.
 
-However, once our application reaches a certain size it becomes increasingly different to stretch these models to cover all aspects of the business domain. For example, an account will likely mean something different to a department meant for billing vs one 
+However, once the application reaches a certain size it becomes increasingly difficult to stretch these models to cover all aspects of the business domain. For example, an 'account' will likely mean something very different to the billing department than one geared towards managing security. This can lead to a confusion of responsibilities within the model, and whilst teams will generally be using the same terminology in reality they actually mean very different things.
 
+A solution proposed by the [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215) methodology is to divide up our unified model. This approach avoids the problems described by chopping these conflicting concerns into a number of partitions - each a bounded context. This allows for coherent discussion and clear modeling to take place within the bounds of a context, adhering more closely to the single responsibility principle. It also allows us to map out the relationships between each bounded context so that interactions between them are more clearly defined.
 
+To continue our 'account' example, we would split both 'billing' and 'security' into different bounded contexts. We are then able to reason about the concerns of the model separately for each - the billing team concerning themselves more with payments, whilst security with any rights or permissions given to an account.
 
-*DDD - bounded context == microservice*
-*service is a business domain*
-*divide up complex domain into bounded contexts and map out relationships between*
+![some context split example]()
+
+*service is a business domain. bounded context == microservice*
+
 
 # Things that Change Together Stay Together
 
@@ -52,11 +55,6 @@ Let’s quickly review two fairly simple but fundamental concepts of good softwa
 *if changing components together then should be merged*
 *drive modularity through things that change at the same time*
 
-# Decoupled in Space and Time
-
-*decoupled in space and time*
-*Isolation Drives Simpler Deployment*
-
 # Strangler Pattern
 
 *strangler pattern*
@@ -69,3 +67,4 @@ Let’s quickly review two fairly simple but fundamental concepts of good softwa
 * [Microservices Architecture Principle #3: small bounded contexts over one comprehensive model](http://blog.xebia.com/microservices-architecture-principle-3-small-bounded-contexts-over-one-comprehensive-model/)
 * [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 * [DDD - The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
+* [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215)

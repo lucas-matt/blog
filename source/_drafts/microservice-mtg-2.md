@@ -35,16 +35,14 @@ To continue our 'account' example, we would split both 'billing' and 'security' 
 
 ![some context split example]()
 
-It follows from this that the way we breakup our application into services corresponds very naturally to the bounded contexts we define. This reduces the amount of knowledge that any one team has to keep in mind as the focus only has to be within a specific context. 
+It follows from this that the way we breakup our application into services corresponds very naturally to the bounded contexts we can define. Taking this approach allows us to reduce the amount of knowledge that any one team has to keep in mind, as the focus only has to be within a specific context. This also leads to more cleanly separated entities, which should reduce external dependencies and over-complicated chatter.
 
-*service is a business domain. bounded context == microservice*
+In short, a service should correspond to a single business domain, and not cross boundaries.
 
 
 # Things that Change Together Stay Together
 
-As already discussed, microservices should be well-defined, nicely isolated and live within their own bounded context. The ability to separate concerns into neat little packages, that can be managed and worked on separately, is what enables all that dividing to actually conquer your monster scalability problem.
-
-Let’s quickly review two fairly simple but fundamental concepts of good software design, cohesion and coupling. From Wikipedia:
+The ability to separate business concerns into neat little packages that can be managed and worked on separately is what enables all that *dividing* to actually *conquer* your monster scalability problem. Let’s quickly review two fairly simple but fundamental concepts of good software design: cohesion and coupling. From Wikipedia:
 
 {% blockquote Wikipedia https://en.wikipedia.org/wiki/Cohesion_(computer_science) %}
 **Cohesion** refers to the degree to which the elements inside a module belong together. Thus, cohesion measures the strength of relationship between pieces of functionality within a given module. For example, in highly cohesive systems functionality is strongly related.
@@ -54,8 +52,13 @@ Let’s quickly review two fairly simple but fundamental concepts of good softwa
 **Coupling** is the degree of interdependence between software modules; a measure of how closely connected two routines or modules are; the strength of the relationships between modules.
 {% endblockquote %}
 
+After reviewing these concepts it becomes clear that microservices should be highly cohesive but loosely coupled. Concepts and functionality that are strongly related need to be kept within the bounds of the same service. Conversely, more weakly related concepts should tend to existing within separate modules.
+
+An architecture that keeps correlated concerns together and pushes unrelated concepts apart allows for more robust development and deployment strategies. 
+
 *if changing components together then should be merged*
 *drive modularity through things that change at the same time*
+*deployment isolation*
 
 # Strangler Pattern
 

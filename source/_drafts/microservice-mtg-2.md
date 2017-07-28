@@ -62,14 +62,39 @@ An architecture that keeps correlated concerns together and pushes unrelated con
 
 # Strangler Pattern
 
-*strangler pattern*
+It's very rare that a greenfield project lands in your lap. Unfortunately for us developers most of our days are spent maintaining and evolving existing systems. This is definitely something that microservices (done well) can help you manage more easily in future, but let's come back to today's reality. How we can sensibly refactor an existing ball-of-mud application into a more managable architecture?
+
+## Beware the Big Rewrite
+
+After decades of high profile failures it has generally become a natural intuition of software professionals to avoid "The Big Rewrite", but it's worth a cautionary mention anyhow. 
+
+*Second System Syndrome* refers to the common outcome of replacing a profitable, but flawed, system with a complete rewrite that generally misses much of the point of what made the original system successful in the first place.
+
+{% blockquote Mythical Man Month https://www.amazon.co.uk/Mythical-Man-month-Essays-Software-Engineering/dp/0201835959/ref=sr_1_3?s=books&ie=UTF8&qid=1501257288&sr=1-3&keywords=mythical+man+month %}
+When it seems to be working well, designers turn their attention to a more elaborate second system, which is often bloated and grandiose and fails due to its over-ambitious design. In the meantime, the first system may also fail because it was abandoned and not continually refined.
+{% endblockquote %}
+
+## What is the 'Strangler Pattern'?
+
+The Strangler Pattern is a method of slowly wrapping and replacing an existing system, usually a monolith, in a slow and methodical fashion.
+
+One by one, each part of the application (potentially identified by a bounded context) is refactored into a new service and spun out on its own. A façade provides the single entrypoint to your API disguising those parts of the app that have been migrated vs those which are still waiting in line for attention. 
+
+This iterative process gives us many benefits, including:
+* Keeping each refactoring managable due to its small, well defined, context
+* Constant validation of the new functionality vs the old in a real-world, production, scenario
+* Ability to handle failure more gracefully due to a rollback being as simple as redirecting the façade's requests
 
 # Next Time
 
-
+Next time, we'll look into the communication patterns available to connect your microservices together in a maintainable and robust manner. 
 
 # References
 * [Microservices Architecture Principle #3: small bounded contexts over one comprehensive model](http://blog.xebia.com/microservices-architecture-principle-3-small-bounded-contexts-over-one-comprehensive-model/)
 * [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html)
 * [DDD - The Bounded Context Explained](http://blog.sapiensworks.com/post/2012/04/17/DDD-The-Bounded-Context-Explained.aspx)
 * [Domain Driven Design](https://www.amazon.co.uk/Domain-driven-Design-Tackling-Complexity-Software/dp/0321125215)
+* [Martin Fowler - Strangler Application](https://www.martinfowler.com/bliki/StranglerApplication.html)
+* [Apply the Strangler Application pattern to microservices applications](https://www.ibm.com/developerworks/cloud/library/cl-strangler-application-pattern-microservices-apps-trs/index.html)
+* [Mythical Man Month](https://www.amazon.co.uk/Mythical-Man-month-Essays-Software-Engineering/dp/0201835959/ref=sr_1_3?s=books&ie=UTF8&qid=1501257288&sr=1-3&keywords=mythical+man+month)
+* [Strangler Pattern](https://docs.microsoft.com/en-us/azure/architecture/patterns/strangler)

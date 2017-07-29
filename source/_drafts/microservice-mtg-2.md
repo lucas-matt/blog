@@ -33,7 +33,7 @@ A solution proposed by the [Domain Driven Design](https://www.amazon.co.uk/Domai
 
 To continue our 'account' example, we would split both 'billing' and 'security' into different bounded contexts. We are then able to reason about the concerns of the model separately for each - the billing team concerning themselves more with payments, whilst security with any rights or permissions given to an account.
 
-![some context split example]()
+![Bounded Context Example](/images/microservice-mtg-2/bounded-context.png)
 
 It follows from this that the way we breakup our application into services corresponds very naturally to the bounded contexts we can define. Taking this approach allows us to reduce the amount of knowledge that any one team has to keep in mind, as the focus only has to be within a specific context. This also leads to more cleanly separated entities, which should reduce external dependencies and over-complicated chatter.
 
@@ -62,6 +62,9 @@ An architecture that keeps correlated concerns together and pushes unrelated con
 
 # Strangler Pattern
 
+![](/images/microservice-mtg-2/strangler-real.jpg)
+<div style="text-align: right"><sub><sup>["IMG_9322/Ile Maurice/Trou Aux Biches/Big"](https://www.flickr.com/photos/dany13/30109648515/) ([CC BY 2.0](https://creativecommons.org/licenses/by/2.0/)) by [dany13](https://www.flickr.com/people/dany13/)</sup></sub></div>
+
 It's very rare that a greenfield project lands in your lap. Unfortunately for us developers most of our days are spent maintaining and evolving existing systems. This is definitely something that microservices (done well) can help you manage more easily in future, but let's come back to today's reality. How we can sensibly refactor an existing ball-of-mud application into a more managable architecture?
 
 ## Beware the Big Rewrite
@@ -70,15 +73,17 @@ After decades of high profile failures it has generally become a natural intuiti
 
 *Second System Syndrome* refers to the common outcome of replacing a profitable, but flawed, system with a complete rewrite that generally misses much of the point of what made the original system successful in the first place.
 
-{% blockquote Mythical Man Month https://www.amazon.co.uk/Mythical-Man-month-Essays-Software-Engineering/dp/0201835959/ref=sr_1_3?s=books&ie=UTF8&qid=1501257288&sr=1-3&keywords=mythical+man+month %}
+{% blockquote Mythical Man Month https://www.goodreads.com/book/show/13629.The_Mythical_Man_Month %}
 When it seems to be working well, designers turn their attention to a more elaborate second system, which is often bloated and grandiose and fails due to its over-ambitious design. In the meantime, the first system may also fail because it was abandoned and not continually refined.
 {% endblockquote %}
 
 ## What is the 'Strangler Pattern'?
 
-The Strangler Pattern is a method of slowly wrapping and replacing an existing system, usually a monolith, in a slow and methodical fashion.
+The Strangler Pattern is a method of slowly wrapping and replacing an existing system, usually a monolith, in a slow and methodical fashion. It is named after the strangler fig vines found in tropical climates. These vines slowly grow upon a tree, eventually covering (and effectively replacing) the host.
 
 One by one, each part of the application (potentially identified by a bounded context) is refactored into a new service and spun out on its own. A façade provides the single entrypoint to your API disguising those parts of the app that have been migrated vs those which are still waiting in line for attention. 
+
+{% img /images/microservice-mtg-2/strangler.jpg 400 "Stranger Pattern" %}
 
 This iterative process gives us many benefits, including:
 * Keeping each refactoring managable due to its small, well defined, context

@@ -2,7 +2,7 @@ title: "About"
 layout: "page"
 ---
 
-I am a software developer based in the Cardiff area (UK). My day-to-day experience is that of the Java ecosystem, but I am a keen polyglot programmer with an interest in many technologies and programming languages - specifically anything with a functional leaning. In complement to my software development skills, I am also a crap amateur Data Scientist jealously watching the Machine Learning community and all the cool things that get done over there!
+I am a software developer based in the Cardiff area (UK). My day job is set within the Java ecosystem, but I am a keen polyglot programmer with an interest in many technologies and programming languages - specifically anything with a functional leaning. In complement to my software development skills I also try my best as an amateur Data Scientist, pretending to understand the complex math and statistics required to be a good machine learning engineer.
 
 ---
 

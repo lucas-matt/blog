@@ -18,7 +18,7 @@ date: 2017-07-31 00:00:00
 * *{% post_link microservice-mtg-2 Part 2: Breaking Up That Monolith %}*
 * Part 3: Communication & Evolution
 * Part 4: Organization & Standardization
-* Part 5: Prepare to Fail
+* Part 5: Preparing to Fail
 
 ---
 

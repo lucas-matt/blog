@@ -1,11 +1,14 @@
 ---
-title: "Python 3 Asyncio"
-tags: ["python", "async"] 
+title: Python 3 Asyncio
+tags:
+  - python
+  - async
 thumbnail: /images/python-async/python.jpg
 category: Programming
-description: "A quick introduction to Python programming with async/await"
+description: A quick introduction to Python programming with async/await
 date: 2017-08-13 00:00:00
 ---
+
 
 ![](/images/python-async/python.jpg)
 <div style="text-align: right"><sub><sup>["Carpet Python"](https://www.flickr.com/photos/29880452@N05/2819784303/) ([CC BY-NC 2.0](https://creativecommons.org/licenses/by-nc/2.0/)) by [exhibitionwhitmore](https://www.flickr.com/people/29880452@N05/)</sup></sub></div>

@@ -49,9 +49,19 @@ This is where a centralized configuration strategy can help. All services point 
 
 # Service Discovery with Ribbon & Eureka!
 
+Another important aspect of a distributed system is how you actually connect all those moving parts together in the first place! Of course, it's easy to statically configure a set of addresses on service boot, but what if one of those endpoints disappears or becomes unhealthy?
+
+Eureka! and it's partner, Ribbon, were designed to help solve this problem. As a service starts it registers itself with the central Eureka service. This allows any dependent service to find out who to talk to via this central point.
+
+Eureka keeps tabs on a service instance by prodding it's health-check API to ensure that it is available and happy to serve. If an instance is found to be unavailable or reporting issues, it is removed from the working list.
+
+Ribbon keeps the client side of this arrangement simple. It is a request side library that keeps in touch with Eureka to keep track of those addresses that serve a certain function. It abstracts away the physical addresses for a location transparent reference which we can use within our code to decouple our service from any of those upstream.
+
 ![](/images/spring-microservices/eureka.png)
 
 # Failing Successfully with Hystrix
+
+Netflix's Hystrix is a fault tolerance library designed to prevent cascading failures across a distributed system - where failure is almost certainly going to occur at some point.
 
 ## Circuit Breaker
 

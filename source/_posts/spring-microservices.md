@@ -9,6 +9,7 @@ category: Programming
 date: 2017-08-22 00:00:00
 ---
 
+
 ![](/images/spring-microservices/spring.jpg)
 
 *A quick tour of the combined Spring Cloud / Netflix OSS microservice stack through some pretty terrible drawings, inspired by John Carnell's book [Spring Microservices in Action](https://www.manning.com/books/spring-microservices-in-action) (the subject, that is, not the awful pictures)*

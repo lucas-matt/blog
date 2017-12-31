@@ -13,6 +13,32 @@ date: 2018-01-01 00:00:00
 ![](/images/radar-jan-18/firework.jpg)
 <div style="text-align: right"><sub><sup>["Firework"](https://www.flickr.com/photos/spi/3702243785/) ([CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/)) by [spi516](https://www.flickr.com/people/spi/)</sup></sub></div>
 
+The [Thoughtworks Technology Radar](https://www.thoughtworks.com/radar) should be a pretty familiar sight to any active technologist. The wide coverage across hundreds of interesting technologies, both new and old, has made its release something of an event in the software developer's calendar.
+
+In an interesting [post](https://www.thoughtworks.com/insights/blog/build-your-own-technology-radar) by one of Thoughtworks key employees - Neal Ford - it is suggested that not only should enterprises produce their own version of the radar, but so should each individual software developer.
+
+{% blockquote "Build Your Own Technology Radar" https://www.thoughtworks.com/insights/blog/build-your-own-technology-radar %}
+You need two radars: one for yourself, to help guide your career decisions, and one for your company. 
+{% endblockquote %}
+
+In an attempt capture the direction of my own career and hobbyist efforts I have done just this and have created my own personal tech radar.
+
+# TL;DR
+
+As an upfront overview, my intro to 2018 list seems to be split into three broad categories.
+
+**Near Term Increments**
+Items related to Java, microservices and containerization would fall under this category. Technologies that I use on a day to day basis, and in which I should be fairly fluent whilst continually evolving my understanding of.
+
+**Longer Term Investments**
+Technologies that are more aspirational in scope - e.g. AI and machine learning - but are likely to become much more prevalent in the industry within the next 5 years or so.
+
+**Skill Diversification**
+Skills lateral to my everyday ones, but should have some decent appreciation of even if only at a very basic level. For example, Android or Alexa development.
+
+Now for the radar in full.
+
+
 # Techniques & Theory
 
 ![](/images/radar-jan-18/techniques.png)

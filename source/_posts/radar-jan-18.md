@@ -44,36 +44,69 @@ Now for the radar in full.
 ![](/images/radar-jan-18/techniques.png)
 
 ### Too Many Cucumbers!
+
+**hold**
+
 BDD, and Cucumber most specifically, are great tools when used in the right context. However having way too many tests, or generating unfocussed tests, can result in a slow, brittle and unmaintainable test suite. In addition to this, not having a key business stakeholder involved with the definition and understanding of the scenarios defeats the point somewhat. I'll be personally looking to use this technique/tool more judiciously in future.
 
 ### Deep Learning
+
+**trial**
+
 Deep learning, and related techniques, have made neural networks cool again! Not to jump on any kind of bandwagon, but I'll be looking to further understand this class of algorithm more clearly, as I believe they will become much more prevalent in the daily life of a software developer in the upcoming decade and beyond.
 
 ### Service Mesh
+
+**assess**
+
 A microservice architecture, although in the singular quite simple, in the aggregate can become quite an unmanagable behemoth. Managing communication, security, monitoring and other similar concerns that are orthogonal to the core business can form a significant part of this complex distributed system. Service meshes look to externalize and manage much of this trickery as a third part concern, allowing you to focus solely on what you do best.
 
 ### Chaos Engineering
+
+**assess**
+
 If things can go wrong they usually will. Add to this fact that microservices up the surface area of things that can go wrong (specifically in between those services), then writing robust, resilient and scalable systems means we must probe at the corners of possibilities. A mature development team should be looking at chaos engineering practices to try and tease out any problematic edge cases before they occur in the wild.
 
 ### Lightweight Architecture Decision Records
+
+**assess**
+
 Ever wonder why a decision was made or the context in which it was made. Lightweight architecture decision records are a technique for capturing those important decisions in a simple text format able to be kept in SCM alongside the sourcecode itself.
 
 ### Consumer Driven Contract Testing
+
+**trial**
+
 An essential part of the microservice testing toolkit. They enable independent service deployments whilst maintaining that solid contract between any two neighbouring services.
 
 ### Reinforcement Learning
+
+**assess**
+
 A relatively old machine learning technique that utilizes a feedback loop to train a software agent in a specific, realtime, environment. More recently, when combined with deep learning, has shown some very interesting applications - e.g. the famous Deep Mind Atari playing agents.
 
 ### Data Structures & Algorithms
+
+**adopt**
+
 As a software developer, unless you're very lucky, you spend much of your time putting things into databases and then pulling them out again in the future to show to an end user. As you can imagine, this doesn't involve a ton of good old Computer Science, and inevitably the knowledge of those core algorithms slowly diminishes. This is a "note to self" to visit some of those topics, and keep that knowledge fresh.
 
 ### Statistics
+
+**adopt**
+
 The continued rise of machine learning and data science require a good understanding of statistical methods and similar such topics. This is likely to become even more true as the field expands into every day software development.
 
 ### Linear Algebra
+
+**adopt**
+
 Machine learning algorithms are very much based upon core linear algebra concepts. To truely understand the magic inside some of those algorithms, a good understand of linear algebra is essential.
 
 ### Domain Driven Design
+
+**adopt**
+
 Designing microservices that are internally cohesive but well decoupled can be quite a challenge to impllement, as anyone who has worked on such a system will understand. An understanding of DDD is key to to ensure that the right design decisions are made.
 
 # Tools & Frameworks
@@ -81,27 +114,51 @@ Designing microservices that are internally cohesive but well decoupled can be q
 ![](/images/radar-jan-18/tools.png)
 
 ### Tensorflow
+
+**trial**
+
 TensorFlow is an open-source software library for dataflow programming across a range of tasks. It is a symbolic math library, and also used for machine learning applications such as neural networks.
 
 ### Scikit Learn
+
+**trial**
+
 Scikit-learn is a free software machine learning library. It features various classification, regression and clustering algorithms including support vector machines, random forests, gradient boosting, k-means and DBSCAN, and is designed to interoperate with the Python numerical and scientific libraries NumPy and SciPy.
 
 ### Keras
+
+**assess**
+
 Keras is a high-level interface in Python for building neural networks. Keras is open source and runs on top of either TensorFlow or Theano. It provides an amazingly simple interface for creating powerful deep-learning algorithms to train on CPUs or GPUs
 
 ### Jupyter
+
+**adopt**
+
 Increased interest in machine learning — along with the emergence of Python as the programming language of choice for practitioners in this field — has focused particular attention on Python notebooks, and the most popular of these is Jupyter.
 
 ### Open Tracing
+
+**assess**
+
 A vendor-neutral open standard for distributed tracing
 
 ### Apache Spark
+
+**hold**
+
 Apache Spark™ is a fast and general engine for large-scale data processing. Although still an excellen tool in the right circumstance, I've decided to focus my attention on learning less large-scale data science frameworks.
 
 ### Pandas
+
+**adopt**
+
 pandas is an open source library providing high-performance, easy-to-use data structures and data analysis tools for the Python programming language.
 
 ### Numpy
+
+**adopt**
+
 NumPy is the fundamental package for scientific computing with Python.
 
 # Platforms
@@ -109,27 +166,51 @@ NumPy is the fundamental package for scientific computing with Python.
 ![](/images/radar-jan-18/platforms.png)
 
 ### AWS
+
+**adopt**
+
 Clearly AWS isn't anything new, but I've personally neglected getting more involved with the platform for way too long. Here's a "note to self" to dig in and understand it a little more.
 
 ### Serverless
+
+**trial**
+
 The use of serverless architecture has very quickly become an accepted approach for organizations deploying cloud applications, with a plethora of choices available for deployment.
 
 ### Android
+
+**trial**
+
 In a similar vein to my AWS entry, Android (or mobile development in general) should be understood at a basic level by any mature software developer - another todo for personal projects. 
 
 ### Alexa
+
+**trial**
+
 Voice platforms are high in popularity at the moment. Whether a fad, or real trend, it's worth getting stuck in to a personal project on the Alexa platform for some diversification of skills.
 
 ### Sage Maker
+
+**assess**
+
 Amazon SageMaker is a fully-managed service that enables developers and data scientists to quickly and easily build, train, and deploy machine learning models at any scale. Amazon SageMaker removes all the barriers that typically slow down developers who want to use machine learning.
 
 ### Kaggle
+
+**adopt**
+
 Kaggle is a platform for predictive modelling and analytics competitions in which statisticians and data miners compete to produce the best models for predicting and describing the datasets uploaded by companies and users.
 
 ### Kubernetes
+
+**adopt**
+
 Kubernetes is an open-source system for automating deployment, scaling, and management of containerized applications.
 
 ### Docker
+
+**adopt**
+
 Docker is the world's leading containerization platform - not much to add myself, just that it's currenlty a must have for serverside development.
 
 # Languages
@@ -137,19 +218,37 @@ Docker is the world's leading containerization platform - not much to add myself
 ![](/images/radar-jan-18/languages.png)
 
 ### Kotlin
+
+**trial**
+
 Kotlin is a statically typed programming language for modern multiplatform applications. It has overtaken Scala as my personal JVM alt-language of interest, and I'm looking to play with it a fair bit more this year.
 
 ### Python 2
+
+**hold**
+
 Python 2 has been king for as long as I can remember, but with Python 3 getting some great new features and wider community support, it has finally come time for its abdication.
 
 ### Python 3
+
+**adopt**
+
 See Python 2
 
 ### Scala
+
+**hold**
+
 For many years after my initial Clojure obession I saw Scala as my functional saviour from a frustrating and verbose Java. Despite many fun times with the language, its inherent complexity and (seeming) drop off in adoption have lead me to consider the growing alternatives - see Kotlin.
 
 ### R
+
+**hold**
+
 A great data science and machine learning language. However, my larger personal experience with Python, and Python's continued dominence in the data science community, have led me to trim down my options and focus on a deeper rather than broader personal research.
 
 ### Effective Java 8/9
+
+**adopt**
+
 Java has (fairly) recently obtained some significant improves to the core language. However, as with everything, addition adds complexity. Some best practices around these features is key, and where better to study and in Joshua Bloch's revised book.

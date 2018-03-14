@@ -39,14 +39,41 @@ Those that cannot be easily executed from a development environment are doomed t
 A consistent way to deploy and control a deployment is the antidote here. Tooling such as [arquillian](http://arquillian.org/) can given Java developers that piece of mind. Or alternatively, if you're able to encapsulate that "specialness" within a docker container you can use docker-compose (and friends) to orchestrate in a consistent way and move your tests in the right direction.
 
 ## iii) Too much tea
+
+If, more often than not, when you run your tests you have enough time to make a(nother) cup of tea then there's a bit of an issue. Slow tests mean a far longer feedback loop, less pace and more importantly loss of focus.
+
+It's understandable that for a certain small class of test - those that run end-to-end - will take their fair share of time. But every effort should be made to keep the bulk of your tests running lightening quick.
+
+The greatest crime of all is using those dreaded blocking waits to control flow within a test. These stack up *really* quickly and breed even faster - one sleep usually leads to enough instability to require a number of peers. Tests should be strictly event driven, reacting directly to triggers in the system under test.
     
 
 ## iv) An unbalanced portfolio
 
+We're all aware of the sacred 'testing pyramid' demonstrating the range of tests from fast and cheap to slow and costly. There are many variations on this metaphor these days, but they are all based on the same principle: cover as much of your functionality using the lower levels of the pyramid and only extend further up the structure as needed to cover the rest.
+
+Avoid covering functionality in your heavier testing layers when it can taken care of by the simpler and snappier ones.
 
 ## v) Testing in paradise
 
+Little in life is ever certain. However, although in the old monolith world you couldn't ever be completely confident in each and every action, you could be fairly sure a call between one module and another was pretty much guaranteed.
+
+In the distributed systems domain of microservices very little is certain. If your system has a large enough footprint it is almost never going to 100% healthy. It's foolish to test and not take this into account, or to at least not mitigate these issues via more modern chaos engineering strategies.
+
+Tools to check out in this space would include [saboteur](https://github.com/tomakehurst/saboteur), [hoverfly](https://hoverfly.io/) and [simian army](https://github.com/Netflix/SimianArmy/wiki) .
 
 ## vi) Thinking that testing ends when you ship code
 
+Traditional testing strategy is very much focussed on 'the product'. You design it, develop it, run a whole bunch of tests (hopefully automated) before burning it on a disc and kicking it out the door.
 
+Can't we take the same approach with a microservice deployment? Well maybe have certainly tried and inevitably struggled to make it succeed. The inherent complexity in a more advanced distributed system makes catering for every eventuality an enormous task that quickly becomes insurmountable. 
+
+By throwing in the towel and stepping back it becomes clearer that testing is really a probability game. We want to get a near to 100% coverage as we can without spending all our resource on getting there.
+
+A smarter investment may be to pick up much of low hanging fruit when it comes to traditional testing, and then investing the rest in improving our QA in production ability. Strategies such as:
+
+* [**canary deployments**](https://octopus.com/docs/deployment-patterns/canary-deployments) - routing a small selection of users onto a fresh deployment to check its stability.
+* [**shadowing**](http://blog.christianposta.com/microservices/advanced-traffic-shadowing-patterns-for-microservices-with-istio-service-mesh/) - duplicating traffic from the live environment onto a new deployment, and comparing the results to assert correctness.
+
+This clearly comes with a certain amount of maturity within the services themselves. You cannot go about deploying potentially breaking changes into production without an ability to roll back easily, gracefully degrade and to provide alternatives/fallbacks in the case of an issue.
+
+Definitely a goal worth pursuing.

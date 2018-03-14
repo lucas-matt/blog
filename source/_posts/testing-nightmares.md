@@ -49,9 +49,9 @@ The greatest crime of all is using those dreaded blocking waits to control flow 
 
 ## iv) An unbalanced portfolio
 
-We're all aware of the sacred 'testing pyramid' demonstrating the range of tests from fast and cheap to slow and costly. There are many variations on this metaphor these days, but they are all based on the same principle: cover as much of your functionality using the lower levels of the pyramid and only extend further up the structure as needed to cover the rest.
+We're all aware of the sacred 'test pyramid' demonstrating the range of tests from fast and cheap to slow and costly. There are many variations on this metaphor these days, but they are all based on the same principle: cover as much of your functionality using the lower levels of the pyramid and only extend further up the structure as needed to cover the rest.
 
-Avoid covering functionality in your heavier testing layers when it can taken care of by the simpler and snappier ones.
+Avoid covering functionality in your heavier testing layers when it can be taken care of by the simpler and snappier ones.
 
 ## v) Testing in paradise
 
@@ -65,7 +65,7 @@ Tools to check out in this space would include [saboteur](https://github.com/tom
 
 Traditional testing strategy is very much focussed on 'the product'. You design it, develop it, run a whole bunch of tests (hopefully automated) before burning it on a disc and kicking it out the door.
 
-Can't we take the same approach with a microservice deployment? Well maybe have certainly tried and inevitably struggled to make it succeed. The inherent complexity in a more advanced distributed system makes catering for every eventuality an enormous task that quickly becomes insurmountable. 
+Can't we take the same approach with a microservice deployment? Well many have certainly tried and inevitably struggled to make it succeed. The inherent complexity in a more advanced distributed system makes catering for every eventuality an enormous task that quickly becomes insurmountable. 
 
 By throwing in the towel and stepping back it becomes clearer that testing is really a probability game. We want to get a near to 100% coverage as we can without spending all our resource on getting there.
 

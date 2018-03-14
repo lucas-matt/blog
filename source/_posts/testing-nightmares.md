@@ -12,7 +12,7 @@ thumbnail: /images/nightmare.jpg
 ![](/images/nightmare.jpg)
 <div style="text-align: right"><sub><sup>["The Stuff of nightmares"](https://www.flickr.com/photos/ollierb/14572262390/) ([CC BY-NC-ND 2.0](https://creativecommons.org/licenses/by-nc-nd/2.0/)) by [ollierb](https://www.flickr.com/people/ollierb/)</sup></sub></div>
 
-Tests are clearly and extremely important port of a developer's day-to-day. They provide us with a safety net as we hack away at the rotten roots of our codebase, allowing us to feel more like a real engineer and less like we're walking through an antiques shop wearing a 12th century suit of armour.
+Tests are clearly an extremely important port of a developer's day-to-day. They provide us with a safety net as we hack away at the rotten roots of our codebase, allowing us to feel more like a real engineer and less like we're walking through an antiques shop wearing a 12th century suit of armour.
 
 But as Dante said - there's a special place in hell for evil-doing programmers, where the tests run ever so slowly, constantly flap and the coffee never ever brews! - or at least I'm pretty sure that's what Inferno describes having never actually read it. In reality, we've all glimpsed this hell and its myriad mini tortures ...
 

@@ -1,0 +1,63 @@
+comment:
+    disqus:  lucasmatt.com
+
+menu:
+  Home: .
+  Archives: archives
+  Categories: categories
+  Tags: tags
+  About: about
+
+# Customize
+customize:
+    logo:
+        enabled: false
+        width: 40
+        height: 40
+        url: images/avatar.png
+    profile:
+        enabled: true # Whether to show profile bar
+        fixed: true
+        avatar: images/avatar.jpg
+        author: Matthew Lucas
+        author_title: Software Developer & General Nerd
+        location: Cardiff, UK
+        follow: https://github.com/lucas-matt/
+    highlight: monokai
+    sidebar: right # sidebar position, options: left, right or leave it empty
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon: # path to favicon
+    social_links:
+        github: http://github.com/lucas-matt
+        twitter: http://twitter.com/notmattlucas
+        rss: /rss2.xml
+    social_link_tooltip: true # enable the social link tooltip, options: true, false
+
+# Widgets
+widgets:
+    - recent_posts
+    - category
+    - archive
+    - tagcloud
+    - links
+
+# Search
+search:
+    insight: true # you need to install `hexo-generator-json-content` before using Insight Search
+
+# Plugins
+plugins:
+    lightgallery: true # options: true, false
+    justifiedgallery: true # options: true, false
+    google_analytics: UA-17281106-1
+    mathjax: true # options: true, false
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        twitter_id: notmattlucas
+        google_plus: lucas1000001
+    links:
+        linkedin: https://www.linkedin.com/in/lucas-matt/
+        twitter: https://twitter.com/NotMattLucas
+        github: https://github.com/lucas-matt

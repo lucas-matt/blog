@@ -2,6 +2,9 @@
 ## Docs: https://hexo.io/docs/configuration.html
 ## Source: https://github.com/hexojs/hexo/
 
+exclude_generator:
+- home
+
 # Site
 title: lucasmatt.com
 subtitle: Techie Ramblings
